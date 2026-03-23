@@ -21,9 +21,7 @@ function App() {
     formData.append('resume', acceptedFile);
 
     try {
-      const response = await axios.post('https://resume-backend-one-mu.vercel.app/api/analyze', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' }
-      });
+      const response = await axios.post('https://resume-backend-one-mu.vercel.app/api/analyze', formData);
       console.log('Analysis Success:', response.data);
       setResults(response.data.data);
     } catch (err) {
