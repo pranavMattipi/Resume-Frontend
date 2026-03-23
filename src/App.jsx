@@ -21,7 +21,7 @@ function App() {
     formData.append('resume', acceptedFile);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/analyze', formData, {
+      const response = await axios.post('https://resume-backend-one-mu.vercel.app/api/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       console.log('Analysis Success:', response.data);
@@ -66,7 +66,7 @@ function App() {
           </h1>
           
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-medium leading-relaxed">
-            Harness the power of <span className="text-[#66FCF1]">Google Gemini 1.5 Flash</span> to decode technical roles, optimize keyword density, and boost your ATS ranking instantly.
+            Harness the power of <span className="text-[#66FCF1]">Google Gemini 2.0 Flash</span> to decode technical roles, optimize keyword density, and boost your ATS ranking instantly.
           </p>
         </header>
 

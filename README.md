@@ -22,7 +22,7 @@ A high-end, premium frontend for the Resume Analyzer application, built with Rea
    ```
 
 3. **Check Backend Connectivity**:
-   Ensure the backend is running at `http://localhost:8000`. You can change the API URL in `App.jsx` if necessary.
+   Ensure the backend is running at `https://resume-backend-one-mu.vercel.app/`. You can change the API URL in `App.jsx` if necessary.
 
 4. **Run the development server**:
    ```bash
